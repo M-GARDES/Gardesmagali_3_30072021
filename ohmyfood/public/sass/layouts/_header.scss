@@ -1,0 +1,33 @@
+/*Header*/
+
+header {
+    box-shadow: 6px 6px 6px black;
+    width: 100%;
+    min-width: 320px;
+    padding: 21px 0;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            max-width: 168px;
+        }
+    }
+}
+
+.fa-arrow-left:before {
+    position: absolute;
+    left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+}
