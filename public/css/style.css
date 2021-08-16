@@ -4,6 +4,10 @@
   padding: 0;
   margin: 0;
 }
+.presentation__discover{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 a {
   text-decoration: none;
@@ -11,7 +15,7 @@ a {
 }
 
 .container-all {
-  max-width: 2560px;
+  max-width: 100%;
 }
 
 h2,
@@ -31,11 +35,11 @@ body {
 }
 
 .container-all {
-  max-width: 2560px;
+  max-width: 100%;
 }
 @media screen and (min-width: 1800px) {
   .container-all {
-    max-width: 1800px;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -210,8 +214,8 @@ h1 {
 }
 @media screen and (min-width: 375px) {
   .restaurants__card {
-    max-width: 330px;
-    min-width: 280px;
+    max-width: 390px;
+    min-width: 340px;
   }
 }
 @media screen and (min-width: 650px) {
@@ -542,6 +546,8 @@ header {
   padding: 21px 0;
   margin: 0px;
   box-shadow: 0 6px 6px #bababa;
+  margin-bottom: 3px;
+
  
 }
 header .logo {
