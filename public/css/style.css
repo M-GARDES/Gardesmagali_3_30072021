@@ -253,8 +253,9 @@ h1 {
 }
 .fa-heart:before {
   content: "\f004";
-  font-weight: normal;
-  transition color 1s ease-out;
+  font-weight: bold;
+  background-color: white;
+  transition:color 1s ease-out;
 }
 .fa-heart:hover:before {
   color: #9356DC;
