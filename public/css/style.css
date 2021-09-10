@@ -249,16 +249,11 @@ h1 {
   position: absolute;
   right: 20px;
   top: 20px;
-  background-color: white;
 }
-.fa-heart:before {
-  content: "\f004";
-  font-weight: bold;
-  background-color: white;
-  transition:color 1s ease-out;
-}
-.fa-heart:hover:before {
+.fa-heart:hover {
   color: #9356DC;
+  transition:color 0.2s ease-out;
+  font-weight: bold;
   cursor: pointer;
 }
 .restaurants .btn-new {
@@ -334,6 +329,7 @@ h1 {
 .card__global__entrees {
   animation: fadein 2s;
 }
+
 @media screen and (min-width: 1140px) {
   .card__global__entrees {
     margin-right: 10px;
