@@ -216,11 +216,20 @@ h1 {
   opacity: 0.8;
   box-shadow: 1rem 1rem 6px #c6b4dd;
 }
+@media screen and (max-width: 768px) {
+  .function {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column}  
+}
 @media screen and (min-width: 375px) {
   .restaurants__card {
     max-width: 390px;
     min-width: 340px;
   }
+  .function__choice {
+    width: 250px;      
+    }
 }
 @media screen and (min-width: 650px) {
   .restaurants__card {
@@ -513,8 +522,8 @@ header {
   min-width: 320px;
   padding: 21px 0;
   margin: 0px;
-  box-shadow: 0 6px 6px #d1cfcf;
-  margin-bottom: 3px;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
+  margin-bottom: 5px;
 
  
 }
