@@ -31,17 +31,9 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-
 }
-
 .container-all {
   max-width: 100%;
-}
-@media screen and (min-width: 1800px) {
-  .container-all {
-    max-width: 100%;
-    margin: auto;
-  }
 }
 
 .fas {
@@ -111,7 +103,6 @@ h1 {
   font-weight: bold;
   width: 100%;
 }
-
 .presentation {
   display: flex;
   flex-direction: column;
@@ -138,15 +129,13 @@ h1 {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .presentation__explore:hover {
-  opacity: 1.5;
+  opacity: 1.2;
   box-shadow: 0.5rem 0.5rem 20px rgba(0, 0, 0, 0.25);
 }
-
 /*Fonctionnement*/
 .function__title {
   margin: 0 0 20px 22px;
 }
-
 .function {
   font-weight: bold;
   font-size: 15px;
@@ -216,11 +205,19 @@ h1 {
   opacity: 0.8;
   box-shadow: 1rem 1rem 6px #c6b4dd;
 }
+
+/*iph6/7/8*/
 @media screen and (max-width: 768px) {
   .function {
     justify-content: center;
     align-items: center;
     flex-direction: column}  
+}
+@media screen and (min-width: 1800px) {
+  .container-all {
+    max-width: 100%;
+    margin: auto;
+  }
 }
 @media screen and (min-width: 375px) {
   .restaurants__card {
@@ -287,7 +284,6 @@ h1 {
   font-family: "Shrikhand", cursive;
   max-width: 322px;
 }
-
 .fa-heart:before {
   margin-left: 20px;
 }
@@ -299,7 +295,6 @@ h1 {
     justify-content: space-between;
   }
 }
-
 .card {
   background-color: #F6F6F6;
   padding: 36px 21px;
@@ -327,44 +322,30 @@ h1 {
   background: #99E2D0;
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.card__global__entrees {
-  animation: fadein 2s;
-}
 
 @media screen and (min-width: 1140px) {
   .card__global__entrees {
     margin-right: 10px;
   }
 }
-
 .card__global__plats {
   animation: fadein 4s;
 }
+
 @media screen and (min-width: 1142px) {
   .card__global__plats {
     margin-right: 10px;
   }
 }
-
 .card__global__desserts {
   animation: fadein 6s;
 }
-
 .card__global__entrees h2,
 .card__global__plats h2,
 .card__global__desserts h2 {
   font-weight: normal;
   font-size: 20px;
 }
-
 .card__global__contenu {
   background-color: #FFF;
   max-width: 350px;
@@ -377,6 +358,7 @@ h1 {
   justify-content: space-between;
   overflow: hidden;
 }
+
 @media screen and (min-width: 400px) and (max-width: 1024px) {
   .card__global__contenu {
     max-width: none;
@@ -395,6 +377,7 @@ h1 {
 .card__global__contenu__dish h4 {
   font-size: 16px;
 }
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .card__global__contenu__dish h3 {
     text-overflow: ellipsis;
@@ -426,6 +409,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
 }
+
 @media screen and (max-width: 405px) {
   .card__global__contenu:hover .header_menu {
     max-width: 130px;
@@ -434,7 +418,6 @@ h1 {
 .card__global__contenu:hover .circle {
   transform: rotate(360deg);
 }
-
 .card__global__contenu__dish__confirmation {
   background-color: #99E2D0;
   min-width: 4rem;
@@ -443,7 +426,6 @@ h1 {
   justify-content: center;
   margin-right: -64px;
 }
-
 .circle {
   width: 1.6rem;
   height: 1.6rem;
@@ -459,11 +441,9 @@ h1 {
 .circle .fas {
   margin-left: 4px;
 }
-
 .center {
   text-align: center;
 }
-
 .card__price {
   display: flex;
   justify-content: flex-end;
@@ -473,7 +453,6 @@ h1 {
   margin-right: 20px;
   width: 25%;
 }
-
 .header_menu {
   width: 230px;
   display: flex;
@@ -490,6 +469,7 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 
 /*Bouton Commander*/
 .bouton__commander {
