@@ -347,7 +347,7 @@ h1 {
 @media screen and (min-width: 1140px) {
   .card__global__entrees {
     margin-right: 10px;
-    animation: fadein 3s;
+    animation: fadein 3s ;
   }
 }
 .card__global__plats {
@@ -360,7 +360,8 @@ h1 {
   }
 }
 .card__global__desserts {
-  animation: fadein 9s;
+  animation: fadein 9s ;
+
 }
 .card__global__entrees h2,
 .card__global__plats h2,
