@@ -263,14 +263,19 @@ h1 {
 }
 .restaurants__card .restaurants__card__content .heart {
   position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.fa-heart:hover {
-  transition:color 0.2s ease-out;
-  color: #9356DC;
-  font-weight: bold;
+  right: 10px;
+  top: 10px;
+  font-size: 1.6em;
+  z-index: 100;
   cursor: pointer;
+  font-weight: 100;
+}  
+.fa-heart:hover:before{
+  transition: all .8s ease-in-out;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
 }
 .restaurants .btn-new {
   background-color: #99E2D0;
