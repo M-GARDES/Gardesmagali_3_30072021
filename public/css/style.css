@@ -56,6 +56,7 @@ h1 {
   animation: loader 3s forwards;
 }
 
+/*Animations/
 /*Animation loader*/
 @keyframes loader {
   0% {
@@ -229,7 +230,7 @@ h1 {
     margin: auto;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   .restaurants__card {
     max-width: 390px;
     min-width: 340px;
@@ -237,6 +238,11 @@ h1 {
   .function__choice {
     width: 250px;      
     }
+}
+@media screen and (max-width: 280px) {
+  .function__choice {
+    width: 180px;      
+    } 
 }
 @media screen and (min-width: 650px) {
   .restaurants__card {
@@ -341,11 +347,11 @@ h1 {
 @media screen and (min-width: 1140px) {
   .card__global__entrees {
     margin-right: 10px;
-    animation: fadein 2s;
+    animation: fadein 3s;
   }
 }
 .card__global__plats {
-  animation: fadein 4s;
+  animation: fadein 6s;
 }
 
 @media screen and (min-width: 1142px) {
@@ -354,7 +360,7 @@ h1 {
   }
 }
 .card__global__desserts {
-  animation: fadein 6s;
+  animation: fadein 9s;
 }
 .card__global__entrees h2,
 .card__global__plats h2,
