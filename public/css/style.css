@@ -44,18 +44,6 @@ h1 {
   color: #9356DC;
 }
 
-/*Loader*/
-.loader {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: #FFF;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  animation: loader 3s forwards;
-}
-
 /*Animations/
 /*Animation loader*/
 @keyframes loader {
@@ -83,7 +71,6 @@ h1 {
   right: 0;
   bottom: 0;
 }
-
 /*Animation du loader circle*/
 @keyframes spin {
   0% {
@@ -95,7 +82,6 @@ h1 {
     opacity: 0;
   }
 }
-
 /*Animation du menu ds pages*/
 @keyframes fadein {
   from {
@@ -105,6 +91,53 @@ h1 {
       opacity:1;
   }
 }
+
+/*Header*/
+header {
+  width: 100%;
+  min-width: 320px;
+  padding: 21px 0;
+  margin: 0px;
+}
+.header {
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
+  margin-bottom: 5px;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header .logo img {
+  max-width: 168px;
+}
+
+.fa-arrow-left:before {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #000;
+}
+/*Loader*/
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #FFF;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  animation: loader 3s forwards;
+}
+
 /*recherche ville*/
 .proj-search {
   display: flex;
@@ -217,38 +250,6 @@ h1 {
   box-shadow: 1rem 1rem 6px #c6b4dd;
 }
 
-/*iph6/7/8*/
-@media screen and (max-width: 768px) {
-  .function {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column}  
-}
-@media screen and (min-width: 1800px) {
-  .container-all {
-    max-width: 100%;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 375px) {
-  .restaurants__card {
-    max-width: 390px;
-    min-width: 340px;
-  }
-  .function__choice {
-    width: 250px;      
-    }
-}
-@media screen and (max-width: 280px) {
-  .function__choice {
-    width: 180px;      
-    } 
-}
-@media screen and (min-width: 650px) {
-  .restaurants__card {
-    margin-right: 25px;
-  }
-}
 .restaurants__card img {
   width: 100%;
   max-height: 175px;
@@ -309,13 +310,6 @@ h1 {
   margin-left: 20px;
 }
 
-@media screen and (min-width: 1024px) {
-  .card__global {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
 .card {
   background-color: #F6F6F6;
   padding: 36px 21px;
@@ -343,21 +337,8 @@ h1 {
   background: #99E2D0;
 }
 
-
-@media screen and (min-width: 1140px) {
-  .card__global__entrees {
-    margin-right: 10px;
-    animation: fadein 3s ;
-  }
-}
 .card__global__plats {
   animation: fadein 6s;
-}
-
-@media screen and (min-width: 1142px) {
-  .card__global__plats {
-    margin-right: 10px;
-  }
 }
 .card__global__desserts {
   animation: fadein 9s ;
@@ -381,12 +362,6 @@ h1 {
   justify-content: space-between;
   overflow: hidden;
 }
-
-@media screen and (min-width: 400px) and (max-width: 1024px) {
-  .card__global__contenu {
-    max-width: none;
-  }
-}
 .card__global__contenu__dish {
   width: 350px;
   padding: 14px 0;
@@ -401,18 +376,6 @@ h1 {
   font-size: 16px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .card__global__contenu__dish h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .card__global__contenu__dish h4 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-}
 .card__global__contenu:hover .card__global__contenu__dish__confirmation {
   margin-right: 0px;
   min-width: 4rem;
@@ -433,11 +396,6 @@ h1 {
   overflow: hidden;
 }
 
-@media screen and (max-width: 405px) {
-  .card__global__contenu:hover .header_menu {
-    max-width: 130px;
-  }
-}
 .card__global__contenu:hover .circle {
   transform: rotate(360deg);
 }
@@ -519,41 +477,6 @@ h1 {
   box-shadow: 1rem 1rem 20px rgba(0, 0, 0, 0.25);
 }
 
-/*Header*/
-header {
-  width: 100%;
-  min-width: 320px;
-  padding: 21px 0;
-  margin: 0px;
-}
-.header {
-  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
-  margin-bottom: 5px;
-}
-header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-header .logo img {
-  max-width: 168px;
-}
-
-.fa-arrow-left:before {
-  position: absolute;
-  left: 2rem;
-  height: 2rem;
-  width: 2rem;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: #000;
-}
-
 /*Footer*/
 footer {
   background-color: #353535;
@@ -584,4 +507,77 @@ footer .footer__logo {
   margin-bottom: 15px;
 }
 
+/*@media screen*/
+
+@media screen and (max-width: 280px) {
+  .function__choice {
+    width: 180px;      
+    } 
+}
+@media screen and (max-width: 375px) {
+  .restaurants__card {
+    max-width: 390px;
+    min-width: 340px;
+  }
+  .function__choice {
+    width: 250px;      
+    }
+}
+@media screen and (max-width: 405px) {
+  .card__global__contenu:hover .header_menu {
+    max-width: 130px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .card__global__contenu__dish h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .card__global__contenu__dish h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 650px) {
+  .restaurants__card {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .function {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column}  
+}
+@media screen and (min-width: 1800px) {
+  .container-all {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card__global {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+  .card__global__contenu {
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .card__global__entrees {
+    margin-right: 10px;
+    animation: fadein 3s ;
+  }
+}
+@media screen and (min-width: 1142px) {
+  .card__global__plats {
+    margin-right: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
