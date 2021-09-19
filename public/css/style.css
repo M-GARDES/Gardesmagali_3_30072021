@@ -104,7 +104,7 @@ header .logo img {
   left: 0;
   top: 0;
   z-index: 10000;
-  animation: loader 6s forwards;
+  animation: loader 4s forwards;
 }
 
 /*recherche ville*/
@@ -367,6 +367,9 @@ header .logo img {
 
 .pl10 {
   animation: animplat 0.5s 2s ease-in-out both;
+}
+.pl11 {
+  animation: animplat 0.5s 2.2s ease-in-out both;  
 }
 .card__global__entrees h2,
 .card__global__plats h2,
